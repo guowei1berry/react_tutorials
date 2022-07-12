@@ -3,6 +3,7 @@ import React, { useEffect, useState,useRef } from 'react';
 function Ref() {
   const [inputValue, setInputValue] = useState("")
   const count = useRef(0)
+  
 
   useEffect(()=>{
     count.current = count.current +1
@@ -35,7 +36,7 @@ function Ref() {
       </label>
       <input type="submit" value="submit"  />
 
-      <h1>Render Count: {count.current}</h1>
+      <h1 style={{backgroundColor: "lightblue",color: "red"}}>Render Count: {count.current}</h1>
       </form>
     </div>
   );

@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Ref from './components/Ref';
+import RefForm from './components/RefForm'
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
         </a>
       </header>
       <Ref/>
+
+      <RefForm/>
+
+      <ScrollToTop/>
     </div>
   );
 }
